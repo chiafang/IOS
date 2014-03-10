@@ -32,7 +32,6 @@
     
     self.navigationItem.title = @"Post";
     
-    
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:57.0/255.0 green:158.0/255.0 blue:209.0/255.0 alpha:1.0];
 /*
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Left" style: UIBarButtonItemStylePlain target:nil action:nil];
