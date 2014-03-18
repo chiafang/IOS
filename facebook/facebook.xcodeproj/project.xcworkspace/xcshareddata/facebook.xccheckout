@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>595A7542-600E-42B4-B1E8-A18C45EF4DB4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>facebook</string>
+	<key>IDESourceControlProjectPath</key>
+	<string>facebook.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2E575D85-4F65-4E6E-841E-E0CD422C7BF2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chiafang/IOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2E575D85-4F65-4E6E-841E-E0CD422C7BF2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2E575D85-4F65-4E6E-841E-E0CD422C7BF2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>facebook</string>
+		</dict>
+	</array>
+</dict>
+</plist>
