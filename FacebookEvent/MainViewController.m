@@ -42,8 +42,6 @@
 
 
 
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -78,45 +76,43 @@
                 [self.loginbuttonspin stopAnimating];
                 // NSLog(verify id and password);
                 
-                //initiate 4 UI View Contollers
+                // Tab bar controller
+                UITabBarController *tabBarController = [[UITabBarController alloc] init];
+                
+                //initiate 4 Tab Contollers
                 FacebookFeedViewController * FBFeedView= [[FacebookFeedViewController alloc]init];
                 ContactListViewController * FBFriendListView= [[ContactListViewController alloc]init];
                 NotificationViewController * NotificationView= [[NotificationViewController alloc]init];
                 MessageViewController * MessageView= [[MessageViewController alloc]init];
-                              
                 
-                FBFeedView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-                //[self presentViewController:FBFeedView animated:YES completion:nil];
-        
-                
-                [NSThread sleepForTimeInterval:3.0];
-                // NSlog (after 2 second, we can flip to fb feed main page);
-           
-                
-                //create navigation controller and then initiate from fbfeedcontroller
-                
-                // for tab controller
-                UITabBarController *tabBarController = [[UITabBarController alloc] init];
-                
-                // for navigaation
+    
                 UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:FBFeedView];
                 UINavigationController *navigationController1 = [[UINavigationController alloc] initWithRootViewController:FBFriendListView];
                 UINavigationController *navigationController2 = [[UINavigationController alloc] initWithRootViewController:NotificationView];
-                 UINavigationController *navigationController3 = [[UINavigationController alloc] initWithRootViewController:MessageView];
+                UINavigationController *navigationController3 = [[UINavigationController alloc] initWithRootViewController:MessageView];
                 
-                
-                
+
                 tabBarController.viewControllers = @[navigationController,navigationController1,navigationController2,navigationController3];
                 navigationController.tabBarItem.title = @"Feed";
-                navigationController1.tabBarItem.title = @"friends";
+                navigationController1.tabBarItem.title = @"Friends";
                 navigationController2.tabBarItem.title = @"Messages";
                 navigationController3.tabBarItem.title = @"Notification";
                 
                 
                 //[self presentViewController:navigationController animated:YES completion:nil];
                 [self presentViewController:tabBarController animated:YES completion:nil];
-             
-          
+                
+                
+                FBFeedView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+                //[self presentViewController:FBFeedView animated:YES completion:nil];
+        
+                
+                [NSThread sleepForTimeInterval:3.0];
+                // NSlog (after 3 second, we can flip to fb feed main page);
+           
+                
+                //create navigation controller and then initiate from fbfeedcontroller
+                
                 
             });
         });
@@ -149,6 +145,7 @@
     }
 }
 
+
 - (IBAction)typepwd:(id)sender {
     if([self.fb_id.text isEqualToString:@""] || [self.fb_pwd.text isEqualToString:@""]) {
         [self.login_button setEnabled:false];
@@ -156,6 +153,8 @@
         [self.login_button setEnabled:true];
     }
 }
+
+//enable the login button when users start to edit
 
 - (void)willShowKeyboard:(NSNotification *)notification {
     NSDictionary *userInfo = [notification userInfo];

@@ -28,12 +28,12 @@
 - (void)viewDidLoad
 {
     
+    // configure navigation bar title and background color
     self.navigationItem.title = @"News Feed";
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"newsfeedtitle.png"]];
     
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:73.0/255.0 green:105.0/255.0 blue:166.0/255.0 alpha:1.0];
     self.navigationController.navigationBar.translucent = NO;
-    // configure navigation bar background color
     
 
     // Configure nav left button
@@ -46,8 +46,6 @@
 
      self.navigationItem.rightBarButtonItem = RightButton;
     
-
-
     
     //spin animation for first 5 second
     [self.spinicon startAnimating];
@@ -61,10 +59,14 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.spinicon stopAnimating];
                 
+   //Create the scroll view and put the subview              
+                
                 UIImageView *facebookfeed = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"feedview.png"]];
                 [facebookfeed setUserInteractionEnabled:YES];
                 [self.UIFeedView addSubview:facebookfeed];
                 [self.UIFeedView setContentSize:facebookfeed.frame.size];
+               // self.UIFeedView.contentSize = CGSizeMake(facebookfeed.frame.size.width, facebookfeed.frame.size.height);
+
                 
             });
         });
