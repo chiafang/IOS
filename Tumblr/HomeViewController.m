@@ -12,6 +12,7 @@
 @interface HomeViewController ()
 - (IBAction)onButtonLogin:(id)sender;
 @property (nonatomic, strong   ) LoginViewController *loginview;
+@property (strong, nonatomic) IBOutlet UIView *home_bg;
 
 @end
 
@@ -30,6 +31,10 @@
 {
     [super viewDidLoad];
     self.loginview = [[LoginViewController alloc] init];
+    UIColor *bg = [UIColor colorWithRed:(53.0/255.0) green:(70.0/255.0) blue:(92.0/255.0) alpha:1];
+    self.home_bg.backgroundColor = bg;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
+                <outlet property="home_bg" destination="i5M-Pr-FkT" id="iMQ-yz-RBr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,6 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="This is your Dashboard. " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RsS-Vm-XWS">
                     <rect key="frame" x="44" y="287" width="233" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.20000001789999999" green="0.27450981740000002" blue="0.36862745879999997" alpha="1" colorSpace="deviceRGB"/>
                     <color key="textColor" red="0.67058825492858887" green="0.73725491762161255" blue="0.7882353663444519" alpha="1" colorSpace="deviceRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -26,7 +26,6 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="When you follow some blogs, their " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5S-h4-s4C">
                     <rect key="frame" x="52" y="317" width="248" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.20000001789999999" green="0.27450981740000002" blue="0.36862745879999997" alpha="1" colorSpace="deviceRGB"/>
                     <color key="textColor" red="0.45098042490000001" green="0.52156865600000002" blue="0.58823531870000001" alpha="1" colorSpace="deviceRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -61,13 +60,17 @@
                     </subviews>
                     <color key="backgroundColor" red="0.20000001789999999" green="0.2588235438" blue="0.34117648010000001" alpha="1" colorSpace="deviceRGB"/>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainhome_img" translatesAutoresizingMaskIntoConstraints="NO" id="ZIm-aD-jul">
+                    <rect key="frame" x="57" y="142" width="220" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.20000001789999999" green="0.27450981740000002" blue="0.36862745879999997" alpha="1" colorSpace="deviceRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
+        <image name="mainhome_img" width="542" height="312"/>
         <image name="tumblrlogo" width="257" height="69"/>
     </resources>
 </document>

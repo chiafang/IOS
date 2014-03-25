@@ -15,6 +15,7 @@
 
 - (IBAction)OnButton_signin:(id)sender;
 - (IBAction)onButton_login:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *bg_color;
 
 
 @end
@@ -36,9 +37,11 @@
     self.loginview = [[LoginViewController alloc] init];
     
     UIColor *bg = [UIColor colorWithRed:(53.0/255.0) green:(70.0/255.0) blue:(92.0/255.0) alpha:1];
-    self.bg_view.backgroundColor = bg;
-    self.bg_view.alpha = 0.95f;
+    self.bg_color.backgroundColor = bg;
+ 
+
     
+
     }
 
 
