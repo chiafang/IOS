@@ -14,8 +14,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+ 
+    // make batter status white
     [application setStatusBarHidden:NO];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     self.window.rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
     self.window.rootViewController=[[TBTabViewController alloc]init];
     

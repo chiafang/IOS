@@ -47,6 +47,8 @@
 
 - (IBAction)login_button:(UIButton *)sender {
      if([self.id_field.text isEqualToString:@"alice@yahoo-inc.com"] && [self.pw_field.text isEqualToString:@"1234"]) {
+      //   self.tabBarController.selectedIndex = 1;
+      //   [self dismissViewControllerAnimated:YES completion:nil];
      } else {
          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"The password you entered is incorrect. Please try again." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
          [alert show];
