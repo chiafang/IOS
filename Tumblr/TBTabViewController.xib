@@ -31,13 +31,13 @@
                             <rect key="frame" x="14" y="8" width="36" height="35"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" image="home_selected_icon">
+                            <state key="normal" image="home_icon">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <state key="selected" image="home_selected_icon"/>
                             <state key="highlighted" image="home_selected_icon"/>
                             <connections>
-                                <action selector="onButtonHome:" destination="-1" eventType="touchUpInside" id="NUz-Ck-shT"/>
+                                <action selector="onBtnHome:" destination="-1" eventType="touchUpInside" id="oVr-RT-lHU"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WL6-wf-4sH">
@@ -46,8 +46,9 @@
                             <state key="normal" image="search_icon">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <state key="selected" image="search_selected_icon"/>
                             <connections>
-                                <action selector="onButtonSearch:" destination="-1" eventType="touchUpInside" id="ntT-oM-myl"/>
+                                <action selector="onBtnSearch:" destination="-1" eventType="touchUpInside" id="6NC-XW-ZaU"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfV-VQ-l7U">
@@ -66,8 +67,9 @@
                             <state key="normal" image="Account_icon">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <state key="selected" image="account_selected_icon"/>
                             <connections>
-                                <action selector="onButtonAccount:" destination="-1" eventType="touchUpInside" id="6qK-Yc-T8L"/>
+                                <action selector="onBtnAccount:" destination="-1" eventType="touchUpInside" id="Pel-R3-a7z"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzT-ax-Qrg">
@@ -76,8 +78,9 @@
                             <state key="normal" image="trending_icon">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <state key="selected" image="trending_selected_icon"/>
                             <connections>
-                                <action selector="onBottonActivity:" destination="-1" eventType="touchUpInside" id="Hay-uj-S6K"/>
+                                <action selector="onBtnActivitiy:" destination="-1" eventType="touchUpInside" id="fWT-sN-2IJ"/>
                             </connections>
                         </button>
                     </subviews>
@@ -102,10 +105,14 @@
     </objects>
     <resources>
         <image name="Account_icon" width="35" height="35"/>
+        <image name="account_selected_icon" width="35" height="35"/>
         <image name="compose_icon" width="50" height="35"/>
+        <image name="home_icon" width="35" height="35"/>
         <image name="home_selected_icon" width="70" height="70"/>
         <image name="popover_tip" width="339" height="124"/>
         <image name="search_icon" width="35" height="35"/>
+        <image name="search_selected_icon" width="35" height="35"/>
         <image name="trending_icon" width="35" height="35"/>
+        <image name="trending_selected_icon" width="35" height="35"/>
     </resources>
 </document>

@@ -24,17 +24,18 @@
 @property (nonatomic, strong   ) LoginViewController *loginview;
 @property (weak, nonatomic) IBOutlet UIView *ContentView;
 @property (strong, nonatomic) IBOutlet UIImageView *popover;
+- (IBAction)onBtnActivitiy:(UIButton *)sender;
+- (IBAction)onBtnHome:(UIButton *)sender;
+- (IBAction)onBtnSearch:(UIButton *)sender;
+- (IBAction)onBtnAccount:(UIButton *)sender;
 
-- (IBAction)onButtonHome:(id)sender;
-- (IBAction)onButtonSearch:(id)sender;
 - (IBAction)onButtonEdit:(id)sender;
-- (IBAction)onButtonAccount:(id)sender;
-- (IBAction)onBottonActivity:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *HomeButton;
 @property (weak, nonatomic) IBOutlet UIButton *SearchButton;
 @property (weak, nonatomic) IBOutlet UIButton *ComposerButton;
 @property (weak, nonatomic) IBOutlet UIButton *AccountButton;
 @property (weak, nonatomic) IBOutlet UIButton *ActivityButton;
+@property UIButton *currentSelectedButton;
 
 @property (weak, nonatomic) IBOutlet UIView *TabUIView;
 
@@ -89,6 +90,10 @@
     bounce.repeatCount = 2;
     bounce.autoreverses = YES;
     [self.popover.layer addAnimation:bounce forKey:@"position"];
+    
+    self.currentSelectedButton = self.HomeButton;
+    self.currentSelectedButton.selected = YES;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -97,13 +102,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onButtonHome:(id)sender {
-    [self.ContentView bringSubviewToFront:self.homeview.view];
-    [self.HomeButton setImage:[UIImage imageNamed:@"home_selected_icon.png"] forState:UIControlStateNormal];
-    [self.SearchButton setImage:[UIImage imageNamed:@"search_icon.png"] forState:UIControlStateNormal];
-
+- (IBAction)onBtnActivitiy:(UIButton *)sender {
+    
+    [self.ContentView bringSubviewToFront:self.activityview.view];
     [self.ContentView bringSubviewToFront:self.popover];
-
+    
     CGPoint origin = self.popover.center;
     CGPoint target = CGPointMake(self.popover.center.x, self.popover.center.y+10);
     CABasicAnimation *bounce = [CABasicAnimation animationWithKeyPath:@"position.y"];
@@ -113,24 +116,43 @@
     bounce.repeatCount = 2;
     bounce.autoreverses = YES;
     [self.popover.layer addAnimation:bounce forKey:@"position"];
-
-}
-
-- (IBAction)onButtonSearch:(id)sender {
-    [self.ContentView bringSubviewToFront:self.searchview.view];
-    [self.SearchButton setImage:[UIImage imageNamed:@"search_selected_icon.png"] forState:UIControlStateNormal];
-    [self.HomeButton setImage:[UIImage imageNamed:@"home_icon.png"] forState:UIControlStateNormal];
-
-}
-
-- (IBAction)onButtonEdit:(id)sender {
     
-    self.editview.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:self.editview animated:YES completion:nil];
-    //    [self.ContentView bringSubviewToFront:self.editview.view];
+    self.currentSelectedButton.selected = NO;
+    sender.selected = YES;
+    self.currentSelectedButton = sender;
+    
 }
 
-- (IBAction)onButtonAccount:(id)sender {
+- (IBAction)onBtnHome:(UIButton *)sender {
+    [self.ContentView bringSubviewToFront:self.homeview.view];
+
+    
+    [self.ContentView bringSubviewToFront:self.popover];
+    
+    CGPoint origin = self.popover.center;
+    CGPoint target = CGPointMake(self.popover.center.x, self.popover.center.y+10);
+    CABasicAnimation *bounce = [CABasicAnimation animationWithKeyPath:@"position.y"];
+    bounce.duration = 0.5;
+    bounce.fromValue = [NSNumber numberWithInt:origin.y];
+    bounce.toValue = [NSNumber numberWithInt:target.y];
+    bounce.repeatCount = 2;
+    bounce.autoreverses = YES;
+    [self.popover.layer addAnimation:bounce forKey:@"position"];
+    
+    self.currentSelectedButton.selected = NO;
+    sender.selected = YES;
+    self.currentSelectedButton = sender;
+}
+
+- (IBAction)onBtnSearch:(UIButton *)sender {
+    [self.ContentView bringSubviewToFront:self.searchview.view];
+    
+    self.currentSelectedButton.selected = NO;
+    sender.selected = YES;
+    self.currentSelectedButton = sender;
+}
+
+- (IBAction)onBtnAccount:(UIButton *)sender {
     [self.ContentView bringSubviewToFront:self.accountview.view];
     [self.ContentView bringSubviewToFront:self.popover];
     CGPoint origin = self.popover.center;
@@ -144,24 +166,19 @@
     bounce.autoreverses = YES;
     [self.popover.layer addAnimation:bounce forKey:@"position"];
 
-
+    self.currentSelectedButton.selected = NO;
+    sender.selected = YES;
+    self.currentSelectedButton = sender;
 }
 
 
-
-- (IBAction)onBottonActivity:(id)sender {
-    [self.ContentView bringSubviewToFront:self.activityview.view];
-    [self.ContentView bringSubviewToFront:self.popover];
-
-    CGPoint origin = self.popover.center;
-    CGPoint target = CGPointMake(self.popover.center.x, self.popover.center.y+10);
-    CABasicAnimation *bounce = [CABasicAnimation animationWithKeyPath:@"position.y"];
-    bounce.duration = 0.5;
-    bounce.fromValue = [NSNumber numberWithInt:origin.y];
-    bounce.toValue = [NSNumber numberWithInt:target.y];
-    bounce.repeatCount = 2;
-    bounce.autoreverses = YES;
-    [self.popover.layer addAnimation:bounce forKey:@"position"];
+- (IBAction)onButtonEdit:(id)sender {
     
+    self.editview.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:self.editview animated:YES completion:nil];
+    //    [self.ContentView bringSubviewToFront:self.editview.view];
 }
+
+
+
 @end
