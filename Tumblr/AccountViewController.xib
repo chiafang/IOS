@@ -41,7 +41,7 @@
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK9-B4-qMB">
-                            <rect key="frame" x="61" y="104" width="74" height="35"/>
+                            <rect key="frame" x="56" y="104" width="74" height="35"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <state key="normal" title="Settings">
@@ -52,7 +52,7 @@
                             <rect key="frame" x="61" y="57" width="74" height="35"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                            <state key="normal" title="Following">
+                            <state key="normal" title=" Following">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
@@ -63,7 +63,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rui-u2-fbo">
-                    <rect key="frame" x="51" y="362" width="94" height="37"/>
+                    <rect key="frame" x="50" y="351" width="94" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.33333334329999997" green="0.62352943419999995" blue="0.79215693470000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="Sign In">
@@ -74,7 +74,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEd-As-fu7">
-                    <rect key="frame" x="180" y="362" width="93" height="37"/>
+                    <rect key="frame" x="175" y="351" width="93" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.45098042490000001" green="0.52156865600000002" blue="0.58823531870000001" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="Log In">
@@ -84,34 +84,20 @@
                         <action selector="onButton_login:" destination="-1" eventType="touchUpInside" id="LJb-Sh-jLu"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sign up and get more !" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vdf-Lc-5XG">
-                    <rect key="frame" x="75" y="258" width="181" height="30"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Follow more blogs. Like and reblog  your favorites posts. Create your  own blogs for the world to enjoy !        " translatesAutoresizingMaskIntoConstraints="NO" id="ruC-jC-6dR">
+                    <rect key="frame" x="38" y="276" width="255" height="67"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.67058825489999996" green="0.73725491759999995" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up and get more !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DO-Dy-Jwa">
+                    <rect key="frame" x="70" y="247" width="190" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Follow more blogs. Like and reblog " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pbW-uP-4SO">
-                    <rect key="frame" x="44" y="286" width="315" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="textColor" red="0.67058825489999996" green="0.73725491759999995" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="own blogs for the world to enjoy." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-54-Abc">
-                    <rect key="frame" x="51" y="324" width="232" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="textColor" red="0.67058825489999996" green="0.73725491759999995" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   your favorites posts. Create your" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqy-f7-Q8E">
-                    <rect key="frame" x="37" y="304" width="246" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="textColor" red="0.67058825489999996" green="0.73725491759999995" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

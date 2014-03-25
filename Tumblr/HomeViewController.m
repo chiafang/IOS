@@ -12,7 +12,7 @@
 @interface HomeViewController ()
 - (IBAction)onButtonLogin:(id)sender;
 @property (nonatomic, strong   ) LoginViewController *loginview;
-@property (strong, nonatomic) IBOutlet UIView *home_bg;
+@property (strong, nonatomic) IBOutlet UIView *home_bg; // mainView
 
 @end
 
