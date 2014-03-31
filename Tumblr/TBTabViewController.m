@@ -75,6 +75,7 @@
     [self.ContentView addSubview:self.homeview.view];
     [self.ContentView addSubview:self.searchview.view];
  //   [self.ContentView addSubview:self.editview.view];
+    // dont need this because we will bring the modal cover over the view. 
     [self.ContentView addSubview:self.accountview.view];
     [self.ContentView addSubview:self.activityview.view];
     
