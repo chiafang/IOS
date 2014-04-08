@@ -33,10 +33,11 @@
     [super viewDidLoad];
     CGRect frame = CGRectMake(self.postView.frame.origin.y, self.postView.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
     self.postView.frame = frame;
-   // [self.postView setUserInteractionEnabled:YES];
-    self.postView.userInteractionEnabled = NO;
-   // [self.postView addSubview:self.postScrollView];
+    [self.postView setUserInteractionEnabled:YES];
+    [self.postScrollView addSubview:self.postView];
     [self.postScrollView setContentSize:self.postView.frame.size];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
