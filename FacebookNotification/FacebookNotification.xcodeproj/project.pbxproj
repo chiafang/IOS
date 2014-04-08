@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B456C62F18F243BD0050163A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C60C18F243BD0050163A /* AFHTTPRequestOperation.m */; };
+		B456C63018F243BD0050163A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C60E18F243BD0050163A /* AFHTTPRequestOperationManager.m */; };
+		B456C63118F243BD0050163A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C61018F243BD0050163A /* AFHTTPSessionManager.m */; };
+		B456C63218F243BD0050163A /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C61218F243BD0050163A /* AFNetworkActivityIndicatorManager.m */; };
+		B456C63318F243BD0050163A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C61518F243BD0050163A /* AFNetworkReachabilityManager.m */; };
+		B456C63418F243BD0050163A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C61718F243BD0050163A /* AFSecurityPolicy.m */; };
+		B456C63518F243BD0050163A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C61918F243BD0050163A /* AFURLConnectionOperation.m */; };
+		B456C63618F243BD0050163A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C61B18F243BD0050163A /* AFURLRequestSerialization.m */; };
+		B456C63718F243BD0050163A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C61D18F243BD0050163A /* AFURLResponseSerialization.m */; };
+		B456C63818F243BD0050163A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C61F18F243BD0050163A /* AFURLSessionManager.m */; };
+		B456C63918F243BD0050163A /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C62118F243BD0050163A /* UIActivityIndicatorView+AFNetworking.m */; };
+		B456C63A18F243BD0050163A /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C62318F243BD0050163A /* UIAlertView+AFNetworking.m */; };
+		B456C63B18F243BD0050163A /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C62518F243BD0050163A /* UIButton+AFNetworking.m */; };
+		B456C63C18F243BD0050163A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C62718F243BD0050163A /* UIImageView+AFNetworking.m */; };
+		B456C63D18F243BD0050163A /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C62A18F243BD0050163A /* UIProgressView+AFNetworking.m */; };
+		B456C63E18F243BD0050163A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C62C18F243BD0050163A /* UIRefreshControl+AFNetworking.m */; };
+		B456C63F18F243BD0050163A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B456C62E18F243BD0050163A /* UIWebView+AFNetworking.m */; };
+		E1CA262918EE357500880152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA262818EE357500880152 /* Foundation.framework */; };
+		E1CA262B18EE357500880152 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA262A18EE357500880152 /* CoreGraphics.framework */; };
+		E1CA262D18EE357500880152 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA262C18EE357500880152 /* UIKit.framework */; };
+		E1CA263318EE357500880152 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1CA263118EE357500880152 /* InfoPlist.strings */; };
+		E1CA263518EE357500880152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA263418EE357500880152 /* main.m */; };
+		E1CA263918EE357500880152 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA263818EE357500880152 /* AppDelegate.m */; };
+		E1CA263B18EE357500880152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1CA263A18EE357500880152 /* Images.xcassets */; };
+		E1CA264218EE357500880152 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA264118EE357500880152 /* XCTest.framework */; };
+		E1CA264318EE357500880152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA262818EE357500880152 /* Foundation.framework */; };
+		E1CA264418EE357500880152 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA262C18EE357500880152 /* UIKit.framework */; };
+		E1CA264C18EE357500880152 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1CA264A18EE357500880152 /* InfoPlist.strings */; };
+		E1CA264E18EE357500880152 /* FacebookNotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA264D18EE357500880152 /* FacebookNotificationTests.m */; };
+		E1CA265A18EE358D00880152 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA265818EE358D00880152 /* MainViewController.m */; };
+		E1CA265B18EE358D00880152 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA265918EE358D00880152 /* MainViewController.xib */; };
+		E1CA265F18EE37D500880152 /* NotficationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA265D18EE37D500880152 /* NotficationTableViewController.m */; };
+		E1CA266018EE37D500880152 /* NotficationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA265E18EE37D500880152 /* NotficationTableViewController.xib */; };
+		E1CA266418EE37F800880152 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA266218EE37F800880152 /* PostViewController.m */; };
+		E1CA266518EE37F800880152 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA266318EE37F800880152 /* PostViewController.xib */; };
+		E1CA266918EE3DA300880152 /* NotifcationCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA266718EE3DA300880152 /* NotifcationCellTableViewCell.m */; };
+		E1CA266A18EE3DA300880152 /* NotifcationCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA266818EE3DA300880152 /* NotifcationCellTableViewCell.xib */; };
+		E1CA266E18EE3DE300880152 /* PostCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA266C18EE3DE300880152 /* PostCellTableViewCell.m */; };
+		E1CA266F18EE3DE300880152 /* PostCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA266D18EE3DE300880152 /* PostCellTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1CA264518EE357500880152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1CA261D18EE357500880152 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1CA262418EE357500880152;
+			remoteInfo = FacebookNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B456C60B18F243BD0050163A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		B456C60C18F243BD0050163A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		B456C60D18F243BD0050163A /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		B456C60E18F243BD0050163A /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		B456C60F18F243BD0050163A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		B456C61018F243BD0050163A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		B456C61118F243BD0050163A /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		B456C61218F243BD0050163A /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		B456C61318F243BD0050163A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		B456C61418F243BD0050163A /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		B456C61518F243BD0050163A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		B456C61618F243BD0050163A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		B456C61718F243BD0050163A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		B456C61818F243BD0050163A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		B456C61918F243BD0050163A /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		B456C61A18F243BD0050163A /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		B456C61B18F243BD0050163A /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		B456C61C18F243BD0050163A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		B456C61D18F243BD0050163A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		B456C61E18F243BD0050163A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		B456C61F18F243BD0050163A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		B456C62018F243BD0050163A /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		B456C62118F243BD0050163A /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		B456C62218F243BD0050163A /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		B456C62318F243BD0050163A /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		B456C62418F243BD0050163A /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		B456C62518F243BD0050163A /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		B456C62618F243BD0050163A /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		B456C62718F243BD0050163A /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		B456C62818F243BD0050163A /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		B456C62918F243BD0050163A /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		B456C62A18F243BD0050163A /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		B456C62B18F243BD0050163A /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		B456C62C18F243BD0050163A /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		B456C62D18F243BD0050163A /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		B456C62E18F243BD0050163A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		E1CA262518EE357500880152 /* FacebookNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CA262818EE357500880152 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1CA262A18EE357500880152 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1CA262C18EE357500880152 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1CA263018EE357500880152 /* FacebookNotification-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookNotification-Info.plist"; sourceTree = "<group>"; };
+		E1CA263218EE357500880152 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1CA263418EE357500880152 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1CA263618EE357500880152 /* FacebookNotification-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FacebookNotification-Prefix.pch"; sourceTree = "<group>"; };
+		E1CA263718EE357500880152 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1CA263818EE357500880152 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E1CA263A18EE357500880152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1CA264018EE357500880152 /* FacebookNotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookNotificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CA264118EE357500880152 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E1CA264918EE357500880152 /* FacebookNotificationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookNotificationTests-Info.plist"; sourceTree = "<group>"; };
+		E1CA264B18EE357500880152 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1CA264D18EE357500880152 /* FacebookNotificationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookNotificationTests.m; sourceTree = "<group>"; };
+		E1CA265718EE358D00880152 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E1CA265818EE358D00880152 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E1CA265918EE358D00880152 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		E1CA265C18EE37D500880152 /* NotficationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotficationTableViewController.h; sourceTree = "<group>"; };
+		E1CA265D18EE37D500880152 /* NotficationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotficationTableViewController.m; sourceTree = "<group>"; };
+		E1CA265E18EE37D500880152 /* NotficationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotficationTableViewController.xib; sourceTree = "<group>"; };
+		E1CA266118EE37F800880152 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		E1CA266218EE37F800880152 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		E1CA266318EE37F800880152 /* PostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
+		E1CA266618EE3DA300880152 /* NotifcationCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifcationCellTableViewCell.h; sourceTree = "<group>"; };
+		E1CA266718EE3DA300880152 /* NotifcationCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifcationCellTableViewCell.m; sourceTree = "<group>"; };
+		E1CA266818EE3DA300880152 /* NotifcationCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifcationCellTableViewCell.xib; sourceTree = "<group>"; };
+		E1CA266B18EE3DE300880152 /* PostCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCellTableViewCell.h; sourceTree = "<group>"; };
+		E1CA266C18EE3DE300880152 /* PostCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCellTableViewCell.m; sourceTree = "<group>"; };
+		E1CA266D18EE3DE300880152 /* PostCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCellTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1CA262218EE357500880152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA262B18EE357500880152 /* CoreGraphics.framework in Frameworks */,
+				E1CA262D18EE357500880152 /* UIKit.framework in Frameworks */,
+				E1CA262918EE357500880152 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CA263D18EE357500880152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA264218EE357500880152 /* XCTest.framework in Frameworks */,
+				E1CA264418EE357500880152 /* UIKit.framework in Frameworks */,
+				E1CA264318EE357500880152 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B456C60A18F243BD0050163A /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B456C60B18F243BD0050163A /* AFHTTPRequestOperation.h */,
+				B456C60C18F243BD0050163A /* AFHTTPRequestOperation.m */,
+				B456C60D18F243BD0050163A /* AFHTTPRequestOperationManager.h */,
+				B456C60E18F243BD0050163A /* AFHTTPRequestOperationManager.m */,
+				B456C60F18F243BD0050163A /* AFHTTPSessionManager.h */,
+				B456C61018F243BD0050163A /* AFHTTPSessionManager.m */,
+				B456C61118F243BD0050163A /* AFNetworkActivityIndicatorManager.h */,
+				B456C61218F243BD0050163A /* AFNetworkActivityIndicatorManager.m */,
+				B456C61318F243BD0050163A /* AFNetworking.h */,
+				B456C61418F243BD0050163A /* AFNetworkReachabilityManager.h */,
+				B456C61518F243BD0050163A /* AFNetworkReachabilityManager.m */,
+				B456C61618F243BD0050163A /* AFSecurityPolicy.h */,
+				B456C61718F243BD0050163A /* AFSecurityPolicy.m */,
+				B456C61818F243BD0050163A /* AFURLConnectionOperation.h */,
+				B456C61918F243BD0050163A /* AFURLConnectionOperation.m */,
+				B456C61A18F243BD0050163A /* AFURLRequestSerialization.h */,
+				B456C61B18F243BD0050163A /* AFURLRequestSerialization.m */,
+				B456C61C18F243BD0050163A /* AFURLResponseSerialization.h */,
+				B456C61D18F243BD0050163A /* AFURLResponseSerialization.m */,
+				B456C61E18F243BD0050163A /* AFURLSessionManager.h */,
+				B456C61F18F243BD0050163A /* AFURLSessionManager.m */,
+				B456C62018F243BD0050163A /* UIActivityIndicatorView+AFNetworking.h */,
+				B456C62118F243BD0050163A /* UIActivityIndicatorView+AFNetworking.m */,
+				B456C62218F243BD0050163A /* UIAlertView+AFNetworking.h */,
+				B456C62318F243BD0050163A /* UIAlertView+AFNetworking.m */,
+				B456C62418F243BD0050163A /* UIButton+AFNetworking.h */,
+				B456C62518F243BD0050163A /* UIButton+AFNetworking.m */,
+				B456C62618F243BD0050163A /* UIImageView+AFNetworking.h */,
+				B456C62718F243BD0050163A /* UIImageView+AFNetworking.m */,
+				B456C62818F243BD0050163A /* UIKit+AFNetworking.h */,
+				B456C62918F243BD0050163A /* UIProgressView+AFNetworking.h */,
+				B456C62A18F243BD0050163A /* UIProgressView+AFNetworking.m */,
+				B456C62B18F243BD0050163A /* UIRefreshControl+AFNetworking.h */,
+				B456C62C18F243BD0050163A /* UIRefreshControl+AFNetworking.m */,
+				B456C62D18F243BD0050163A /* UIWebView+AFNetworking.h */,
+				B456C62E18F243BD0050163A /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		E1CA261C18EE357500880152 = {
+			isa = PBXGroup;
+			children = (
+				E1CA266B18EE3DE300880152 /* PostCellTableViewCell.h */,
+				E1CA266C18EE3DE300880152 /* PostCellTableViewCell.m */,
+				E1CA266D18EE3DE300880152 /* PostCellTableViewCell.xib */,
+				E1CA266618EE3DA300880152 /* NotifcationCellTableViewCell.h */,
+				E1CA266718EE3DA300880152 /* NotifcationCellTableViewCell.m */,
+				E1CA266818EE3DA300880152 /* NotifcationCellTableViewCell.xib */,
+				E1CA266118EE37F800880152 /* PostViewController.h */,
+				E1CA266218EE37F800880152 /* PostViewController.m */,
+				E1CA266318EE37F800880152 /* PostViewController.xib */,
+				E1CA265C18EE37D500880152 /* NotficationTableViewController.h */,
+				E1CA265D18EE37D500880152 /* NotficationTableViewController.m */,
+				E1CA265E18EE37D500880152 /* NotficationTableViewController.xib */,
+				E1CA265718EE358D00880152 /* MainViewController.h */,
+				E1CA265818EE358D00880152 /* MainViewController.m */,
+				E1CA265918EE358D00880152 /* MainViewController.xib */,
+				E1CA262E18EE357500880152 /* FacebookNotification */,
+				E1CA264718EE357500880152 /* FacebookNotificationTests */,
+				E1CA262718EE357500880152 /* Frameworks */,
+				E1CA262618EE357500880152 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1CA262618EE357500880152 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA262518EE357500880152 /* FacebookNotification.app */,
+				E1CA264018EE357500880152 /* FacebookNotificationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1CA262718EE357500880152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA262818EE357500880152 /* Foundation.framework */,
+				E1CA262A18EE357500880152 /* CoreGraphics.framework */,
+				E1CA262C18EE357500880152 /* UIKit.framework */,
+				E1CA264118EE357500880152 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1CA262E18EE357500880152 /* FacebookNotification */ = {
+			isa = PBXGroup;
+			children = (
+				B456C60A18F243BD0050163A /* UIKit+AFNetworking */,
+				E1CA263718EE357500880152 /* AppDelegate.h */,
+				E1CA263818EE357500880152 /* AppDelegate.m */,
+				E1CA263A18EE357500880152 /* Images.xcassets */,
+				E1CA262F18EE357500880152 /* Supporting Files */,
+			);
+			path = FacebookNotification;
+			sourceTree = "<group>";
+		};
+		E1CA262F18EE357500880152 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA263018EE357500880152 /* FacebookNotification-Info.plist */,
+				E1CA263118EE357500880152 /* InfoPlist.strings */,
+				E1CA263418EE357500880152 /* main.m */,
+				E1CA263618EE357500880152 /* FacebookNotification-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1CA264718EE357500880152 /* FacebookNotificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA264D18EE357500880152 /* FacebookNotificationTests.m */,
+				E1CA264818EE357500880152 /* Supporting Files */,
+			);
+			path = FacebookNotificationTests;
+			sourceTree = "<group>";
+		};
+		E1CA264818EE357500880152 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA264918EE357500880152 /* FacebookNotificationTests-Info.plist */,
+				E1CA264A18EE357500880152 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1CA262418EE357500880152 /* FacebookNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1CA265118EE357500880152 /* Build configuration list for PBXNativeTarget "FacebookNotification" */;
+			buildPhases = (
+				E1CA262118EE357500880152 /* Sources */,
+				E1CA262218EE357500880152 /* Frameworks */,
+				E1CA262318EE357500880152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacebookNotification;
+			productName = FacebookNotification;
+			productReference = E1CA262518EE357500880152 /* FacebookNotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1CA263F18EE357500880152 /* FacebookNotificationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1CA265418EE357500880152 /* Build configuration list for PBXNativeTarget "FacebookNotificationTests" */;
+			buildPhases = (
+				E1CA263C18EE357500880152 /* Sources */,
+				E1CA263D18EE357500880152 /* Frameworks */,
+				E1CA263E18EE357500880152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1CA264618EE357500880152 /* PBXTargetDependency */,
+			);
+			name = FacebookNotificationTests;
+			productName = FacebookNotificationTests;
+			productReference = E1CA264018EE357500880152 /* FacebookNotificationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1CA261D18EE357500880152 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alice Tsai";
+				TargetAttributes = {
+					E1CA263F18EE357500880152 = {
+						TestTargetID = E1CA262418EE357500880152;
+					};
+				};
+			};
+			buildConfigurationList = E1CA262018EE357500880152 /* Build configuration list for PBXProject "FacebookNotification" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1CA261C18EE357500880152;
+			productRefGroup = E1CA262618EE357500880152 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1CA262418EE357500880152 /* FacebookNotification */,
+				E1CA263F18EE357500880152 /* FacebookNotificationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1CA262318EE357500880152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA266018EE37D500880152 /* NotficationTableViewController.xib in Resources */,
+				E1CA266F18EE3DE300880152 /* PostCellTableViewCell.xib in Resources */,
+				E1CA263318EE357500880152 /* InfoPlist.strings in Resources */,
+				E1CA266A18EE3DA300880152 /* NotifcationCellTableViewCell.xib in Resources */,
+				E1CA265B18EE358D00880152 /* MainViewController.xib in Resources */,
+				E1CA263B18EE357500880152 /* Images.xcassets in Resources */,
+				E1CA266518EE37F800880152 /* PostViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CA263E18EE357500880152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA264C18EE357500880152 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1CA262118EE357500880152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B456C63E18F243BD0050163A /* UIRefreshControl+AFNetworking.m in Sources */,
+				B456C63818F243BD0050163A /* AFURLSessionManager.m in Sources */,
+				B456C63518F243BD0050163A /* AFURLConnectionOperation.m in Sources */,
+				B456C63D18F243BD0050163A /* UIProgressView+AFNetworking.m in Sources */,
+				E1CA265F18EE37D500880152 /* NotficationTableViewController.m in Sources */,
+				B456C63A18F243BD0050163A /* UIAlertView+AFNetworking.m in Sources */,
+				E1CA263918EE357500880152 /* AppDelegate.m in Sources */,
+				E1CA265A18EE358D00880152 /* MainViewController.m in Sources */,
+				B456C63B18F243BD0050163A /* UIButton+AFNetworking.m in Sources */,
+				E1CA266E18EE3DE300880152 /* PostCellTableViewCell.m in Sources */,
+				B456C63918F243BD0050163A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				B456C63218F243BD0050163A /* AFNetworkActivityIndicatorManager.m in Sources */,
+				B456C62F18F243BD0050163A /* AFHTTPRequestOperation.m in Sources */,
+				E1CA263518EE357500880152 /* main.m in Sources */,
+				E1CA266918EE3DA300880152 /* NotifcationCellTableViewCell.m in Sources */,
+				B456C63118F243BD0050163A /* AFHTTPSessionManager.m in Sources */,
+				B456C63418F243BD0050163A /* AFSecurityPolicy.m in Sources */,
+				E1CA266418EE37F800880152 /* PostViewController.m in Sources */,
+				B456C63618F243BD0050163A /* AFURLRequestSerialization.m in Sources */,
+				B456C63318F243BD0050163A /* AFNetworkReachabilityManager.m in Sources */,
+				B456C63F18F243BD0050163A /* UIWebView+AFNetworking.m in Sources */,
+				B456C63718F243BD0050163A /* AFURLResponseSerialization.m in Sources */,
+				B456C63C18F243BD0050163A /* UIImageView+AFNetworking.m in Sources */,
+				B456C63018F243BD0050163A /* AFHTTPRequestOperationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CA263C18EE357500880152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA264E18EE357500880152 /* FacebookNotificationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1CA264618EE357500880152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1CA262418EE357500880152 /* FacebookNotification */;
+			targetProxy = E1CA264518EE357500880152 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1CA263118EE357500880152 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1CA263218EE357500880152 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1CA264A18EE357500880152 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1CA264B18EE357500880152 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1CA264F18EE357500880152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E1CA265018EE357500880152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1CA265218EE357500880152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FacebookNotification/FacebookNotification-Prefix.pch";
+				INFOPLIST_FILE = "FacebookNotification/FacebookNotification-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1CA265318EE357500880152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FacebookNotification/FacebookNotification-Prefix.pch";
+				INFOPLIST_FILE = "FacebookNotification/FacebookNotification-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E1CA265518EE357500880152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FacebookNotification.app/FacebookNotification";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FacebookNotification/FacebookNotification-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FacebookNotificationTests/FacebookNotificationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E1CA265618EE357500880152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FacebookNotification.app/FacebookNotification";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FacebookNotification/FacebookNotification-Prefix.pch";
+				INFOPLIST_FILE = "FacebookNotificationTests/FacebookNotificationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1CA262018EE357500880152 /* Build configuration list for PBXProject "FacebookNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CA264F18EE357500880152 /* Debug */,
+				E1CA265018EE357500880152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1CA265118EE357500880152 /* Build configuration list for PBXNativeTarget "FacebookNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CA265218EE357500880152 /* Debug */,
+				E1CA265318EE357500880152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1CA265418EE357500880152 /* Build configuration list for PBXNativeTarget "FacebookNotificationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CA265518EE357500880152 /* Debug */,
+				E1CA265618EE357500880152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1CA261D18EE357500880152 /* Project object */;
+}

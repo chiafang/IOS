@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D5F8510A-317E-4339-9883-B0DF076790F5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FacebookNotification</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0C4A551A-2FB7-403D-A9C0-1E49C90F2E6D</key>
+		<string>https://github.com/chiafang/IOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FacebookNotification/FacebookNotification.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0C4A551A-2FB7-403D-A9C0-1E49C90F2E6D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chiafang/IOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0C4A551A-2FB7-403D-A9C0-1E49C90F2E6D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0C4A551A-2FB7-403D-A9C0-1E49C90F2E6D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
