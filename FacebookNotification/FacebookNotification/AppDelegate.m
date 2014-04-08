@@ -16,11 +16,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
  
-    NotficationTableViewController *vc = [[NotficationTableViewController  alloc] init];
-    //MainViewController *vc = [[MainViewController alloc] init];
-    
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = navigationController;
+    MainViewController *vc = [[MainViewController alloc] init];
+    self.window.rootViewController = vc;
 
     
     self.window.backgroundColor = [UIColor whiteColor];

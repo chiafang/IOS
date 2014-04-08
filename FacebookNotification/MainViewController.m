@@ -12,10 +12,8 @@
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIView *UIViewContainer;
-@property (weak, nonatomic) IBOutlet UIView *UIViewNavBarTab;
 @property (nonatomic, strong ) NotficationTableViewController *notificationfeedview;
 @property (nonatomic, strong) PostViewController *postview;
-- (IBAction)BtnNotification:(UIButton *)sender;
 
 @end
 
@@ -34,28 +32,11 @@
 
 - (void)viewDidLoad
 {
-      UIColor *myColor = [UIColor colorWithRed:73.0/255.0 green:105.0/255.0 blue:166.0/255.0 alpha:1.0];
-      self.UIViewNavBarTab.backgroundColor = myColor;
-    self.UIViewNavBarTab.tintColor = [UIColor whiteColor];
-    
     [super viewDidLoad];
-
-
-
-     self.notificationfeedview.view.frame = self.UIViewContainer.frame;
-     self.postview.view.frame = self.UIViewContainer.frame;
-    
-    
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.notificationfeedview];
-
-     [self.UIViewContainer addSubview:navigationController.view];
-  //   [self.UIViewContainer addSubview:self.postview.view];
-    
-    [self.UIViewContainer bringSubviewToFront:navigationController.view];
-
-    // self.currentSelectedButton = self.HomeButton;
-    // self.currentSelectedButton.selected = YES;
-    
+    [self.UIViewContainer addSubview:navigationController.view];
+    [self addChildViewController:navigationController];
+    [navigationController didMoveToParentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,6 +45,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)BtnNotification:(UIButton *)sender {
-}
+
 @end

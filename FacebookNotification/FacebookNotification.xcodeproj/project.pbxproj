@@ -44,8 +44,6 @@
 		E1CA266518EE37F800880152 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA266318EE37F800880152 /* PostViewController.xib */; };
 		E1CA266918EE3DA300880152 /* NotifcationCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA266718EE3DA300880152 /* NotifcationCellTableViewCell.m */; };
 		E1CA266A18EE3DA300880152 /* NotifcationCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA266818EE3DA300880152 /* NotifcationCellTableViewCell.xib */; };
-		E1CA266E18EE3DE300880152 /* PostCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA266C18EE3DE300880152 /* PostCellTableViewCell.m */; };
-		E1CA266F18EE3DE300880152 /* PostCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA266D18EE3DE300880152 /* PostCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,9 +121,6 @@
 		E1CA266618EE3DA300880152 /* NotifcationCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifcationCellTableViewCell.h; sourceTree = "<group>"; };
 		E1CA266718EE3DA300880152 /* NotifcationCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifcationCellTableViewCell.m; sourceTree = "<group>"; };
 		E1CA266818EE3DA300880152 /* NotifcationCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifcationCellTableViewCell.xib; sourceTree = "<group>"; };
-		E1CA266B18EE3DE300880152 /* PostCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCellTableViewCell.h; sourceTree = "<group>"; };
-		E1CA266C18EE3DE300880152 /* PostCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCellTableViewCell.m; sourceTree = "<group>"; };
-		E1CA266D18EE3DE300880152 /* PostCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,9 +193,6 @@
 		E1CA261C18EE357500880152 = {
 			isa = PBXGroup;
 			children = (
-				E1CA266B18EE3DE300880152 /* PostCellTableViewCell.h */,
-				E1CA266C18EE3DE300880152 /* PostCellTableViewCell.m */,
-				E1CA266D18EE3DE300880152 /* PostCellTableViewCell.xib */,
 				E1CA266618EE3DA300880152 /* NotifcationCellTableViewCell.h */,
 				E1CA266718EE3DA300880152 /* NotifcationCellTableViewCell.m */,
 				E1CA266818EE3DA300880152 /* NotifcationCellTableViewCell.xib */,
@@ -357,7 +349,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1CA266018EE37D500880152 /* NotficationTableViewController.xib in Resources */,
-				E1CA266F18EE3DE300880152 /* PostCellTableViewCell.xib in Resources */,
 				E1CA263318EE357500880152 /* InfoPlist.strings in Resources */,
 				E1CA266A18EE3DA300880152 /* NotifcationCellTableViewCell.xib in Resources */,
 				E1CA265B18EE358D00880152 /* MainViewController.xib in Resources */,
@@ -390,7 +381,6 @@
 				E1CA263918EE357500880152 /* AppDelegate.m in Sources */,
 				E1CA265A18EE358D00880152 /* MainViewController.m in Sources */,
 				B456C63B18F243BD0050163A /* UIButton+AFNetworking.m in Sources */,
-				E1CA266E18EE3DE300880152 /* PostCellTableViewCell.m in Sources */,
 				B456C63918F243BD0050163A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B456C63218F243BD0050163A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				B456C62F18F243BD0050163A /* AFHTTPRequestOperation.m in Sources */,

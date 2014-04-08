@@ -61,6 +61,7 @@
     [super viewDidLoad];
     
     // configure navigation bar title and background color
+
     self.navigationItem.title = @"News Feed";
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"notification_title.png"]];
     
@@ -78,7 +79,7 @@
     UIBarButtonItem *RightButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"contactlist.png"] style:UIBarButtonItemStylePlain target:self.navigationItem.rightBarButtonItem action:nil];
     
     self.navigationItem.rightBarButtonItem = RightButton;
-    
+
     self.TableView.dataSource = self;
     self.TableView.rowHeight = 100;
     [self.TableView reloadData];
@@ -124,6 +125,7 @@
 
     PostViewController *vc = [[PostViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
-    
+    [self.parentViewController.navigationController pushViewController:vc animated:YES];
+    NSLog(@"current row: 1");
 }
-    @end
+@end
